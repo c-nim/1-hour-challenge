@@ -1,10 +1,10 @@
-// have to install 'promt-sync' to work on node.js
+// have to install 'promt-sync' to use the prompt function to work on node.js
 const prompt = require('prompt-sync')({sigint: true});
 
-let playGame = true
-    //makes a random number between 1-10 to make it a little easier to guess. +1 to include 10 and remove the chance of 0.
+let playGame = true;
+//makes a random number between 1-10 to make it a little easier to guess. +1 to include 10 and remove the chance of 0.
 let randomNum = Math.floor((Math.random() * 10) + 1);
-    // while loop to keep the game running.
+// while loop to keep the game running.
 while(playGame){
     // takes the input of the user and stores in guess.
     let guess = prompt('Guess the random number: ')
